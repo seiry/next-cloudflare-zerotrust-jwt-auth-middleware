@@ -138,8 +138,7 @@
     "yalc": "1.0.0-pre.53"
   },
   "peerDependencies": {
-    "react": ">=17",
-    "react-dom": ">=17"
+    "next": ">=12"
   },
   "resolutions": {
     "glob-parent": ">=5.1.2",
