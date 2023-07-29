@@ -145,5 +145,6 @@
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1",
     "yaml": ">=2.2.2"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
