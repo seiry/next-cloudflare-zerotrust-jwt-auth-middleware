@@ -39,7 +39,8 @@
       "esm"
     ],
     "external": [
-      "react"
+      "react",
+      "next"
     ],
     "injectStyle": false
   },
@@ -123,6 +124,7 @@
     "husky": "8.0.3",
     "jsdom": "^22.1.0",
     "lint-staged": "13.2.3",
+    "next": "^13.4.12",
     "prettier": "2.8.8",
     "prop-types": "15.8.1",
     "react": "18.2.0",
@@ -146,5 +148,8 @@
     "trim-newlines": ">=3.0.1",
     "yaml": ">=2.2.2"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "dependencies": {
+    "jose": "^4.14.4"
+  }
 }
