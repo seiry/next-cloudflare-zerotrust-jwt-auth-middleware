@@ -3,11 +3,17 @@
   "description": "",
   "version": "0.0.0",
   "author": "",
-  "license": "",
-  "keywords": [],
+  "license": "mit",
+  "keywords": [
+    "zerotrust",
+    "jwt",
+    "middleware",
+    "next.js",
+    "cloudflare"
+  ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/seiry/next-cloudflare-zerotrust-jwt-auth-middleware.git"
   },
   "scripts": {
     "dev": "concurrently \"yarn build --watch\" \"yarn storybook\" \"yarn test\" ",
