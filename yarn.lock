@@ -8864,6 +8864,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
+  languageName: node
+  linkType: hard
+
 "duplexify@npm:^3.5.0, duplexify@npm:^3.6.0":
   version: 3.7.1
   resolution: "duplexify@npm:3.7.1"
@@ -13460,6 +13467,7 @@ __metadata:
     "@vitest/coverage-v8": ^0.33.0
     babel-loader: 9.1.2
     concurrently: 8.2.0
+    dotenv: ^16.3.1
     eslint: 8.44.0
     eslint-config-airbnb: 19.0.4
     eslint-config-prettier: 8.8.0
