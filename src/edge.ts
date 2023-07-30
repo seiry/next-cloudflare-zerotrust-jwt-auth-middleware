@@ -78,11 +78,13 @@ export type WithJWTAuthArgs =
   | [];
 
 export function withJWTAuth(...args: WithJWTAuthArgs) {
+  // no options, no other middleware
   if (!args.length || args[0] instanceof Request) {
     // @ts-expect-error
     return handleMiddleware(...args);
   }
 
+  // with other middleware
   if (typeof args[0] === 'function') {
     const middleware = args[0];
     const options = args[1] as NextJWTAuthMiddlewareOptions | undefined;
@@ -90,12 +92,14 @@ export function withJWTAuth(...args: WithJWTAuthArgs) {
       await handleMiddleware(
         nextArgs[0],
         options,
+        // then call the next middleware when jwt is valid
         async () =>
           // nextArgs[0].nextauth = { token };
           await middleware(...nextArgs)
       );
   }
 
+  // with options
   const options = args[0];
   return async (...nextArgs: Parameters<NextMiddleware>) =>
     await handleMiddleware(nextArgs[0], options);
